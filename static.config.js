@@ -3,7 +3,6 @@ import React from 'react';
 import { ServerStyleSheet } from 'styled-components'
 
 export default {
-  basePath: 'vitrine',
   getSiteData: () => ({
     title: 'Vitrine',
     slogan: 'Centralize all of your games within a simple interface'
