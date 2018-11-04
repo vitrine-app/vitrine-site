@@ -3,6 +3,7 @@ import React from 'react';
 import { ServerStyleSheet } from 'styled-components'
 
 export default {
+  siteRoot: 'https://vitrine-app.herokuapp.com',
   getSiteData: () => ({
     title: 'Vitrine',
     slogan: 'Centralize all of your games within a simple interface'
@@ -31,14 +32,14 @@ export default {
     return html;
   },
   Document: ({ Html, Head, Body, children, renderMeta }) => (
-      <Html>
-      <Head>
-        <meta charSet="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"/>
-        {renderMeta.styleTags}
-      </Head>
-      <Body>{children}</Body>
-      </Html>
+    <Html>
+    <Head>
+      <meta charSet="UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"/>
+      {renderMeta.styleTags}
+    </Head>
+    <Body>{children}</Body>
+    </Html>
   )
 }
